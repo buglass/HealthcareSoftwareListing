@@ -1,0 +1,48 @@
+﻿REST Constraints.
+
+	Client-Server:
+		These should be separated. They can evolve separately.
+	Statelessness:
+		The necessary state to handle the request should be in the request itself.
+		All the information to service a request should be in the request itself.
+	Cacheable:
+		Each response must explicitly state whether or not it can be cached.
+	Layered:
+		Supports x-tiered architecture. Each layer cannot know about any layer beyond the layers immediately next to it.
+		The client therefore doesn't know which layer it's connected to.
+		For example can include layers for handling; logging, throttling, exception handling, and caching.
+	Code on Demand (optional):
+		Server can extend client functionality, for example by supplying javaScript functionality that a web-based client could use.
+	Uniform Interface:
+		API and consumers share one technical interface. In the case of the HTTP protocol this would be uniform; URIs, Methods, and Media-Types.
+		Good for cross-platform development because it supports uniform standards.
+		Four separate sub-constraints:
+		*	Identification of resources. The representation of a resource is separate to the actual resource.
+			The returned data is different to the actual database object. Entities don't map exactly to Models such as Dtos.
+		*	Manipulation of resources through representations. When the resource representation is returned there should
+			be enough information (in the data and metadata) for the consumer to manipulate (modify or delete) that resource.
+			contain enough data and metadata to allow further manipulation of, or interaction with, that resource.
+		*	Self-dsecriptive message. Each message should contain enough information on how to process the message.
+			For example if the message body is in json then the message header should specify json as the media type.
+		*	HATEOAS (Hyper-media as the Engine of Application State).
+			Provides metadata on how to consume and use the API. It's a self-documenting API.
+			
+	Richardson Maturity Model:
+	Rates APIs by RESTful maturity.
+	Can be used to describe how to progress an API from a simple application that doesn't care about standards (Level 0)
+	to a fully RESTful API (Level 3).
+	 
+	Level 0: The swamp of POX (Plain Old XML).
+		A protocol is used but not as it should be. For example HTTP is used but a single URI which doesn't use the call types correctly.
+		A POST request is sent to http://localhost/myapi/ with some XML detailing the information required and the information is returned.
+		A POST request is sent to http://localhost/myapi/ with some XML detailing the information for a new object and a new object is created.
+	Level 1: Resources.
+		Multiple resources are used and each resource maps to a URI for example:
+		A POST request is sent to http://localhost/myapi/authors to get a list of authors.
+		A POST request is sent to http://localhost/myapi/authors/{id} to get an author with a specific ID.
+	Level 2: Verbs.
+		Correct HTTP verbs (GET, POST, PUT, PATCH, DELETE) and status codes are used.
+		A GET request is sent to http://localhost/myapi/authors to get a list of authors and 200 is returned.
+		A POST request is sent to http://localhost/myapi/authors to create an author and 201 is returned.
+	Level 3: Hypermedia.
+		HATEOAS support for metadata. Links with hypermedia provide discoverability and effectively self-documentation.

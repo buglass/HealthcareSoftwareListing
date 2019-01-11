@@ -1,0 +1,15 @@
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\bin\Debug\netcoreapp2.1\HealthcareSoftwareListing.deps.json
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\bin\Debug\netcoreapp2.1\HealthcareSoftwareListing.runtimeconfig.json
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\bin\Debug\netcoreapp2.1\HealthcareSoftwareListing.runtimeconfig.dev.json
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\bin\Debug\netcoreapp2.1\HealthcareSoftwareListing.dll
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\bin\Debug\netcoreapp2.1\HealthcareSoftwareListing.pdb
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.csprojAssemblyReference.cache
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.csproj.CoreCompileInputs.cache
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.RazorAssemblyInfo.cache
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.RazorAssemblyInfo.cs
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.AssemblyInfoInputs.cache
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.AssemblyInfo.cs
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.RazorTargetAssemblyInfo.cache
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.dll
+C:\Users\Adam Buglass\Source\Repos\HealthcareSoftwareListing\HealthcareSoftwareListing\obj\Debug\netcoreapp2.1\HealthcareSoftwareListing.pdb

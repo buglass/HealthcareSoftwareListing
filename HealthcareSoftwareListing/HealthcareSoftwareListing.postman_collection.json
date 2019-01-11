@@ -1,0 +1,955 @@
+{
+	"info": {
+		"_postman_id": "957a369a-50d2-40d9-987b-bd66389b2656",
+		"name": "HealthcareSoftwareListing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NB - Delete companies",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Root",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.marvin.hateoas+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all companies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all companies with HATEOAS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.marvin.hateoas+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk insert companies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n\t\t\"name\" : \"Plain\",\r\n\t\t\"startDate\" : \"1997-03-20\",\r\n\t\t\"location\" : \"Colwyn Bay\",\r\n\t\t\"products\" :\r\n\t\t[\r\n\t\t\t{\r\n\t\t\t\t\"name\" : \"TAS\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\" : \"Odyssey\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t{\r\n\t\t\"name\" : \"Adastra\",\r\n\t\t\"startDate\" : \"1997-03-20\",\r\n\t\t\"location\" : \"Ashford\",\r\n\t\t\"products\" :\r\n\t\t[\r\n\t\t\t{\r\n\t\t\t\t\"name\" : \"v2\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\" : \"v3\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t{\r\n\t\t\"name\" : \"TPP\",\r\n\t\t\"startDate\" : \"2005-11-27\",\r\n\t\t\"location\" : \"Leeds\",\r\n\t\t\"products\" :\r\n\t\t[\r\n\t\t\t{\r\n\t\t\t\t\"name\" : \"SystmOne\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companycollections/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companycollections",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/vnd.marvin.company.full+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"EMIS\",\n\t\"startDate\" : \"1988-01-07\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update company",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"EMIS Group PLC\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/[put guid here]",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"[put guid here]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch company",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"add\",\n      \"path\": \"/location\",\n      \"value\": \"Near Leeds\"\n    }\n]"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/E49ED7A6-5B22-4BEB-AC9C-FA5F40E57B0B",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"E49ED7A6-5B22-4BEB-AC9C-FA5F40E57B0B"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get company",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/[put guid here]",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"[put guid here]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete company",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/[put guid here]",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"[put guid here]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert product for company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"X\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/[put guid here]/products/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"[put guid here]",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product for company",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"XXXX\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/[put guid here]/products/[put guid here]",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"[put guid here]",
+						"products",
+						"[put guid here]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upsert product for company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"[put existing id here]\"\n\t\"name\" : \"X\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/[put guid here]/products/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"[put guid here]",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert product with company name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"EMIS\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/[put guid here]/products/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"[put guid here]",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get companies with search and filter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies?searchQuery=s&location=Leeds&pageNumber=2&pageSize=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies"
+					],
+					"query": [
+						{
+							"key": "searchQuery",
+							"value": "s"
+						},
+						{
+							"key": "location",
+							"value": "Leeds"
+						},
+						{
+							"key": "pageNumber",
+							"value": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get companies ordered by location",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies?orderBy=location",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "location"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get companies ordered by name descending",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies?orderBy=name desc",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "name desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get company with data shaping (name and location only)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/76DE3C99-BC9C-4528-9C9C-9A241DF26D14?fields=name,location",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"76DE3C99-BC9C-4528-9C9C-9A241DF26D14"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "name,location"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert  company with date of demise",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/vnd.marvin.companywithlocation.full+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"MyHealthUk\",\n\t\"startDate\" : \"1992-05-03\",\n\t\"dateOfDemise\" : \"2007-11-12\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch company with invalid document",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"add\",\n      \"path\": \"/incorrectfield\",\n      \"value\": \"Near Leeds\"\n    }\n]"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/E49ED7A6-5B22-4BEB-AC9C-FA5F40E57B0B",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"E49ED7A6-5B22-4BEB-AC9C-FA5F40E57B0B"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch non-existing company",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"add\",\n      \"path\": \"/location\",\n      \"value\": \"Near Leeds\"\n    }\n]"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/E49ED7A6-XXXX-XXXX-XXXX-FA5F40E57B0B",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						"E49ED7A6-XXXX-XXXX-XXXX-FA5F40E57B0B"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert company with XML",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.marvin.company.full+xml",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<CompanyForCreationDto xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/HealthcareSoftwareListing.Models\">\n\t<Name>Vision</Name>\n\t<StartDate xmlns:d3p1=\"http://schemas.datacontract.org/2004/07/System\">\n\t\t<d3p1:DateTime>1978-01-07T00:00:00Z</d3p1:DateTime>\n\t\t<d3p1:OffsetMinutes>0</d3p1:OffsetMinutes>\n\t</StartDate>\n</CompanyForCreationDto>"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert company with location using XML",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.marvin.companywithlocation.full+xml",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<CompanyForCreationDto xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/HealthcareSoftwareListing.Models\">\n\t<Name>No location supported</Name>\n\t<StartDate xmlns:d3p1=\"http://schemas.datacontract.org/2004/07/System\">\n\t\t<d3p1:DateTime>1988-01-07T00:00:00Z</d3p1:DateTime>\n\t\t<d3p1:OffsetMinutes>0</d3p1:OffsetMinutes>\n\t</StartDate>\n\t<Location>Not Supported</Location>\n</CompanyForCreationDto>"
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get companies with unacceptable return format",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a4c261ad-8a81-406a-9be2-b02a895c046a",
+						"exec": [
+							"tests[\"Status code is 406\"] = responseCode.code === 406;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/css",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert company with unsupported input format",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0778cd4c-3beb-4532-bada-b31da4288bfd",
+						"exec": [
+							"tests[\"Status code is 415\"] = responseCode.code === 415;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/csv",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/companies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
